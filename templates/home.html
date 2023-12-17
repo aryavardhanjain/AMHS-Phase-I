@@ -1,0 +1,213 @@
+{% extends 'base.html' %}
+{% block body %}
+{% load static %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/scroll.css' %}">
+{% endblock %}
+        <div id="page-1">
+            <div class="p1-sections">
+                <div class="p1-left show-on-scroll">
+                    <h2 class="Welcome">Welcome to <span class="amhs">AMHS</span> !</h2>
+                    <p>Thank you for showing the courage to take a step towards yourself. 
+                        Our team is here with you to help you explore your journey towards a better state 
+                        of mental health. <br><br>
+                        Would you like to know more about us?</p>
+                        <div class="button-group">
+                            <a href="{% url 'mission_vision' %}" style="width: 100%;">
+                              <button class="shadow__btn" style="cursor: pointer;" data-aos="fade-right" data-aos-duration="4000">
+                                Yes, i'd like to know more!
+                              </button>
+                            </a>
+                            <a href="https://api.whatsapp.com/send?phone=918979096954&text=Hi, I'd like to know more about taking a consultation." target="__blank" style="width: 100%;">
+                              <button class="shadow__btn" data-aos="fade-right" data-aos-duration="2000" style="cursor: pointer;">
+                                Connect with a therapist
+                              </button>
+                            </a>
+                            
+                        </div>
+                </div>
+                <div class="p1-right show-on-scroll">
+                    <div class="phone-container" data-aos="fade-out" data-aos-duration="3000">
+                        <img src="{% static 'images/counselling.jpg' %}" alt="image" style="height: 360px; width: 230px; margin-left: 0px;">
+                        <img src="{% static 'images/1976104.svg' %}" alt="svg" style="height: 600px; position: absolute; z-index: -1; filter: drop-shadow(8px 8px 10px grey);">
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="slideshow-text show-on-scroll" style="text-align: center;">
+                <h2 style="font-weight: 200;">How are you feeling?</h2>
+            </div>
+            <div class="gallery">
+                    <div class="image-container">
+                        <img src="{% static 'images/1.webp' %}" alt="STRESS">
+                    </div>
+                    <div class="image-container">
+                        <img src="{% static 'images/2.webp' %}" alt="LONELY">
+                    </div>
+                    <div class="image-container">
+                        <img src="{% static 'images/3.webp' %}" alt="DEPRESSED">
+                    </div>
+                    <div class="image-container">
+                        <img src="{% static 'images/4.webp' %}" alt="BROKEN">
+                    </div>
+                    <div class="image-container">
+                        <img src="{% static 'images/5.webp' %}" alt="ANGRY">
+                    </div>
+            </div>
+            <div class="slideshow-text show-on-scroll" style="text-align: center;">
+                <h2 style="font-weight: 200;">What do our clients say about us?</h2>
+            </div>
+            <div class="slider">
+                <input type="radio" name="toggle" id="btn-1" checked>
+                <input type="radio" name="toggle" id="btn-2">
+                <input type="radio" name="toggle" id="btn-3">
+                <input type="radio" name="toggle" id="btn-4">
+                <input type="radio" name="toggle" id="btn-5">
+                <input type="radio" name="toggle" id="btn-6">
+                <input type="radio" name="toggle" id="btn-7">
+              
+                <div class="slider-controls">
+                  <label for="btn-1"></label>
+                  <label for="btn-2"></label>
+                  <label for="btn-3"></label>
+                  <label for="btn-4"></label>
+                  <label for="btn-5"></label>
+                  <label for="btn-6"></label>
+                  <label for="btn-7"></label>
+                </div>
+              
+                <ul class="slides">
+                  <li class="slide">
+                    <div class="slide-content">
+                      <div class="flex" style="display: flex; justify-content: space-between;">
+                        <h2 class="slide-title">Sushant</h2>
+                        <h2 class="slide-title"><span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span></h2>
+                      </div>
+                      <p class="slide-text">My sessions have been fulfilling, I feel safe to discuss different aspects of my life and inner thoughts without worrying about judgement. My experience of the therapist has attentive, present and kind. although I’m willing to make accommodations or adjustments to ensure we both get the space to address and assess. they also repeat what I said and highlight with examples, which further reassures me that I’m not singular in my struggles, even if the situation is unique to me. Them being on the ND spectrum makes me feel extremely safe to speak about the big and small ways my neurodivergence impacts my life as one big area of focus.</p>
+                    </div>
+                    <p class="slide-image">
+                      <img src="{% static 'images/profile.png' %}" alt="stuff" width="200" height="240" style="margin-left: 50px; margin-top: 10px;">
+                    </p>
+                  </li>
+                  <li class="slide">
+                    <div class="slide-content">
+                      <div class="flex" style="display: flex; justify-content: space-between;">
+                        <h2 class="slide-title">Naina</h2>
+                        <h2 class="slide-title"><span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span></h2>
+                      </div>
+                      <p class="slide-text">Pretty good, I feel at ease and trying to understand how to manage my feelings. <br>Overall the process has been important for my personal growth</p>
+                    </div>
+                    <p class="slide-image">
+                      <img src="{% static 'images/profile.png' %}" alt="stuff" width="200" height="240" style="margin-left: 50px; margin-top: 10px;">
+                    </p>
+                  </li>
+                  <li class="slide">
+                    <div class="slide-content">
+                      <div class="flex" style="display: flex; justify-content: space-between;">
+                        <h2 class="slide-title">Dhairya</h2>
+                        <h2 class="slide-title"><span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span></h2>
+                      </div>
+                      <p class="slide-text">It was good, but expecting more in-depth communication. <br>Their approach is very professional and proactive.</p>
+                    </div>
+                    <p class="slide-image">
+                      <img src="{% static 'images/profile.png' %}" alt="stuff" width="200" height="240" style="margin-left: 50px; margin-top: 10px;">
+                    </p>
+                  </li>
+                  <li class="slide">
+                    <div class="slide-content">
+                      <div class="flex" style="display: flex; justify-content: space-between;">
+                        <h2 class="slide-title">Ayush</h2>
+                        <h2 class="slide-title"><span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span></h2>
+                      </div>
+                      <p class="slide-text">I was very relieved and happy. <br>Till now everything is good</p>
+                    </div>
+                    <p class="slide-image">
+                      <img src="{% static 'images/profile.png' %}" alt="stuff" width="200" height="240" style="margin-left: 50px; margin-top: 10px;">
+                    </p>
+                  </li>
+                  <li class="slide">
+                    <div class="slide-content">
+                      <div class="flex" style="display: flex; justify-content: space-between;">
+                        <h2 class="slide-title">Khusbu</h2>
+                        <h2 class="slide-title"><span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span></h2>
+                      </div>
+                      <p class="slide-text">i felt that i was patiently heard and understood. <br>It was a great experience with Dr. Gill.</p>
+                    </div>
+                    <p class="slide-image">
+                      <img src="{% static 'images/profile.png' %}" alt="stuff" width="200" height="240" style="margin-left: 50px; margin-top: 10px;">
+                    </p>
+                  </li>
+                  <li class="slide">
+                    <div class="slide-content">
+                      <div class="flex" style="display: flex; justify-content: space-between;">
+                        <h2 class="slide-title">Chaitra</h2>
+                        <h2 class="slide-title"><span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span></h2>
+                      </div>
+                      <p class="slide-text">Very good, Megha is an amazing therapist and makes me feel heard and has given me some very meaningful advice which I think will help me get on the right track.</p>
+                    </div>
+                    <p class="slide-image">
+                      <img src="{% static 'images/profile.png' %}" alt="stuff" width="200" height="240" style="margin-left: 50px; margin-top: 10px;">
+                    </p>
+                  </li>
+                  <li class="slide">
+                    <div class="slide-content">
+                      <div class="flex" style="display: flex; justify-content: space-between;">
+                        <h2 class="slide-title">Gulfaraz</h2>
+                        <h2 class="slide-title"><span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span></h2>
+                      </div>
+                      <p class="slide-text">My experience was good with ma'am. <br>She is an excellent therapist. <br>She gave me a new direction to live life.</p>
+                    </div>
+                    <p class="slide-image">
+                      <img src="{% static 'images/profile.png' %}" alt="stuff" width="200" height="240" style="margin-left: 50px; margin-top: 10px;">
+                    </p>
+                  </li>
+                </ul>
+              </div>
+        </div>
+
+        <script src="{% static 'js/show-on-scroll.js' %}"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
+        <script>
+          // Show the loader overlay
+          document.querySelector('.loader-overlay').style.display = 'flex';
+  
+          // Hide the loader overlay after 2 seconds
+          setTimeout(function () {
+              document.querySelector('.loader-overlay').style.display = 'none';
+              document.getElementById('main').style.display = 'block';
+              document.querySelector('footer').style.display = 'block';
+          }, 1200);
+      </script>
+
+{% endblock %}

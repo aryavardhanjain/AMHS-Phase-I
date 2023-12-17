@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+
+{% block body %}
+{% load static %}
+
+<div class="flip-card" id="megha-profile">
+    <div class="flip-card-inner">
+        <div class="flip-card-front">
+            <p class="title"><img src="{% static 'images/profile2.jpg' %}" alt="counselling" style="width: 265px; height: 280px; border-radius: 50%; padding-top: 5px;"></p>
+        </div>
+        <div class="flip-card-back">
+            <p class="title"> Megha Jain <br></p>
+            <p style="font-size: 20px; font-style: italic;">Clinical Psychologist</p>
+        </div>
+    </div>
+</div>
+<div class="introduction-box">
+    <p class="introduction-text" style="padding-bottom: 0 !important;">
+        "I believe that psychotherapy is a process to achieve results from the interaction between the client and the therapist in the most <span>empathetic and non-judgemental form,</span> I consider both the <span>client and the therapist to be in equal positions</span> without establishing any sense of authority one over another.  I intend to work in the setup of psychotherapy to explore the <span>dynamics of the psyche on both ends of the table.</span>
+
+        I have worked for over <span>1200 hours of intense psychotherapy</span> with problems related to <span>relationships, commitment, parent-child interaction, existential crisis, sleep, work motivation, family crisis, sexual discontentment, abuse, and trauma.</span>
+    </p>
+
+        
+    <p class="introduction-text" style="margin-top: 0 !important; padding-top: 0 !important; padding-bottom: 0 !important;">
+        The concerns that I have previously worked with range from <span>Neurodivergence, depressive disorder, obsessive-compulsive disorder, Anxiety, Dissociation, Post-Traumatic Stress, Schizophrenia, Borderline Personality, and Narcissistic personality to Avoidant personality.</span>
+
+        My specialization of models in psychotherapy includes psychoanalysis, clinical hypnotherapy, acceptance and commitment therapy, dialectical Behavior therapy, cognitive behavior therapy, art therapy, techniques of mindfulness, EFT, anger management, assertiveness-communication training, and Relaxation exercises.
+        I am a <span>trauma informed, queer Affirmative and a spirituality-inclusive, Clinical Psychologist</span> with pronouns she/her. I hold a valid practicing <span>license registered with the Rehabilitation Council of India (RCI)</span> with CRR no. A89424.
+    </p> 
+    <p class="introduction-text" style="margin-top: 0 !important; padding-top: 0 !important;">
+        I have majored in the field of Clinical Psychology with an intention of dealing with a specific clientele which requires serious help with diagnosable conditions and disorders along with the assessment process of these disorders. I believe in <span>psychotherapy as a crucial weapon that deserves a place in all our toolboxes</span> to deal with the more complicated and advanced stressors in the environment of the modern day scenario."
+    </p>
+</div>
+<div class="flip-card-1" id="aryavardhan-profile">
+    <div class="flip-card-inner-1">
+        <div class="flip-card-front-1">
+            <p class="title"><img src="{% static 'images/profile3.jpg' %}" alt="counselling" style="width: 265px; height: 280px; border-radius: 50%; padding-top: 5px;"></p>
+        </div>
+        <div class="flip-card-back-1">
+            <p class="title">Aryavardhan Jain</p>
+            <p style="font-size: 20px; font-style: italic;">Technical Director</p>
+        </div>
+    </div>
+</div>
+<div class="introduction-box">
+    <p class="introduction-text-1" style="padding-bottom: 0 !important;">    
+        <br><br>Meet Aryavardhan Jain, the <span>Technical Director</span> in this project, who is currently pursuing his B.Tech in Computer Science and Engineering from Vellore Institute of Technology, Bhopal.
+    </p> 
+    <p class="introduction-text-1" style="padding-bottom: 0 !important;">
+        and dynamic, Aryavardhan is an <span>intermediate web developer</span> with a fervent dedication to creating impactful online platforms. With an academic background in computer science and engineering, he possesses a solid foundation in technology that fuels his drive to bring Antarman: MHS to life.
+        This initiative reflects his commitment to excellence and creativity in web development.
+    </p> 
+    <p class="introduction-text-1" style="padding-bottom: 0 !important;">
+        With each line of code he writes, Aryavardhan <span>innovates new ways of gaining accessibility to mental healthcare</span> with a sense of purpose and innovation. His passion for technology fused with mental health, coupled with his relentless pursuit of perfection, results in web experiences that are not only functional but also visually captivating.
+        Beyond the screen, Aryavardhan is an <span>explorer of possibilities.</span> He has been attuned to emerging trends and technologies, ensuring that <span>AMHS is always at the forefront of innovation.</span> This commitment to staying ahead of the curve transforms Antarman: MHS into a dynamic and evolving <span>platform that caters to the ever-changing needs of its users.</span>
+    </p>
+    <p class="introduction-text-1">
+        Aryavardhan's journey is marked by his determination to master the art of web development. His <span>collaborative spirit and innate curiosity</span> drive him to continuously seek growth opportunities, both personally and professionally. As he aspires to make a meaningful impact in the world of technology, Antarman: aims to become a testament to his unwavering dedication.
+    </p>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+<script src="{% static 'js/app.js' %}"></script>
+
+{% endblock %}
