@@ -14,13 +14,6 @@ html,body{
     overflow-x: hidden;
 }
 
-#menu-icon {
-  font-size: 30px;
-  cursor: pointer;
-  display: none;
-}
-
-
 #nav{
     height: 8vh;
     width: 100%;
@@ -44,13 +37,13 @@ html,body{
       height: 4vw;
       margin-bottom: 10px;
   }
+
   #nav-middle{
       width: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
       gap: 5px;
-      flex-wrap: wrap;
       /* margin-right: 20%; */
   }
   #nav-middle a{
@@ -167,42 +160,122 @@ html,body{
     }
 }
 
+#menu-icon {
+  display: none;
+  cursor: pointer;
+  font-size: 30px;
+}
 
-@media screen and (min-width: 768px) {
-  #nav-right {
-    display: none;
-  }
-  
-  #nav-middle {
-    display: none;
+#nav-overlay {
+  position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    text-align: center;
-    padding-top: 10px;
-  }
-
-  #nav-middle a{
-    display: block;
-    padding: 15px;
-  }
-
-  #hamburger {
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
     display: flex;
-    justify-content: flex-end;
-    cursor: pointer;
-    margin-right: 10%;
-    flex-direction: column;
-    /* flex-direction: row; */
-  }
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5 ease;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 100;
+}
 
-  .bar {
-    width: 25px;
-    height: 3px;
-    background-color: #333;
-    margin: 3px 0;
-    transition: 0.4s;
+#nav-overlay.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.overlay-content {
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.overlay-content a, .overlay-content span {
+  font-size: 1.5rem; /* Larger text for links */
+  margin: 10px 0; /* Spacing between links */
+  text-decoration: none;
+  color: white; /* Same as parent for simplicity */
+  transition: color 0.3s ease;
+}
+
+.overlay-content a:hover, .overlay-content span:hover {
+  color: #fb181b; /* Highlight color on hover */
+}
+
+@media screen and (max-width: 768px) {
+  .overlay-content a, .overlay-content span {
+      font-size: 1.2rem; /* Slightly smaller font on small screens */
   }
 }
 
+/* Style for the dropdowns within the overlay */
+.overlay-content .dropdown {
+  position: relative; /* Needed for absolute positioning of dropdown content */
+}
+
+.overlay-content .dropdown-content {
+  position: absolute;
+  background-color: #f9f9f9; /* Light background for dropdown */
+  min-width: 160px; /* Minimum width */
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.overlay-content .dropdown-content a {
+  color: #333; /* Dark text color for contrast */
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  #nav {
+    padding: 20px;
+  }
+
+  #nav-left img {
+    height: 8vw;
+  }
+
+  body, a, button, .home, .dropbtn {
+    font-size: 4vw;
+  }
+
+  #nav-middle, #nav-right {
+    display: none;
+  } 
+
+  #menu-icon {
+    display: block;
+    font-size: 30px;
+    cursor: pointer;
+  }
+
+  .shadow__btn, .shadow__btn-1 {
+    font-size: 3.5vw;
+    padding: 8px 16px;
+  }
+
+  /* Footer adjustments */
+  .footer__nav, .footer__addr, .legal {
+      flex-direction: column;
+      text-align: center;
+      padding: 10px;
+  }
+
+  .footer__nav > * {
+      flex-basis: 100%;
+  }
+
+  #nav-right button{
+    display: none;
+  }
+}
 
 
 #page-1{
@@ -1060,7 +1133,7 @@ transform: rotateY(180deg);
   line-height: 1.6;
 }
 
-span {
+.font-animation {
   background-image: linear-gradient(yellow, yellow);
   background-size: 0% 100%;
   background-repeat: no-repeat;

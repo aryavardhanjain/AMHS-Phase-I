@@ -41,16 +41,101 @@
   </div>
     
     <div id="main">
-      <div id="nav">
-        <div id="hamburger" onclick="toggleNav()">
-          <div class="bar"></div>
-          <div class="bar"></div>
-          <div class="bar"></div>
+      <div id="nav-overlay" style="display: none;">
+        <div class="overlay-content">
+          {% if current_page == 'home' %}
+                      <span class="home">home</span>
+                    {% else %}
+                      <a href="{% url 'home' %}">home</a>
+                    {% endif %}
+                    <div class="dropdown">
+                        <a class="dropbtn" href="#">about<i class="ri-arrow-down-s-line"></i></a>
+                        <div class="dropdown-content">
+                          {% if current_page == 'founders' %}
+                            <span class="home" style="color: #fb181b !important; background-image: none !important;">Our Founders</span>
+                          {% else %}
+                            <a href="{% url 'our_founders' %}">Our Founders</a>
+                          {% endif %}
+                          {% if current_page == 'mission_vision' %}
+                            <span class="home" style="color: #fb181b !important; background-image: none !important;">Mission & Vision</span>
+                          {% else %}
+                            <a href="{% url 'mission_vision' %}">Mission & Vision</a>
+                          {% endif %}
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <a class="dropbtn" href="#">services<i class="ri-arrow-down-s-line"></i></a>
+                        <div class="dropdown-content">
+                          {% if current_page == 'children' %}
+                            <span class="home">Children</span>
+                          {% else %}
+                            <a href="{% url 'services_children' %}">Children</a>
+                          {% endif %}
+                          {% if current_page == 'adolescents' %}
+                            <span class="home">Adolescents</span>
+                          {% else %}
+                            <a href="{% url 'services_adolescents' %}">Adolescents</a>
+                          {% endif %}
+                          {% if current_page == 'adults' %}
+                            <span class="home">Adults</span>
+                          {% else %}
+                            <a href="{% url 'services_adults' %}">Adults</a>
+                          {% endif %}
+                          {% if current_page == 'senior_citizens' %}
+                            <span class="home">Senior Citizens</span>
+                          {% else %}
+                            <a href="{% url 'services_senior_citizens' %}">Senior Citizens</a>
+                          {% endif %}
+                          {% if current_page == 'family' %}
+                            <span class="home">Family</span>
+                          {% else %}
+                            <a href="{% url 'services_family' %}">Family</a>
+                          {% endif %}
+                          {% if current_page == 'couples' %}
+                            <span class="home">Couples</span>
+                          {% else %}
+                            <a href="{% url 'services_couples' %}">Couples</a>
+                          {% endif %}
+                          {% if current_page == 'consultation' %}
+                            <span class="home">Psychiatrist Consultation</span>
+                          {% else %}
+                            <a href="{% url 'services_psychiatric_consultation' %}">Psychiatrist Consulation</a>
+                          {% endif %}
+                          {% if current_page == 'schools' %}
+                            <span class="home">Schools</span>
+                          {% else %}
+                            <a href="{% url 'services_schools' %}">Schools</a>
+                          {% endif %}
+                          {% if current_page == 'organizations' %}
+                            <span class="home">Organizations</span>
+                          {% else %}
+                            <a href="#">Organizations</a>
+                          {% endif %}
+                        </div>
+                    </div>
+                    {% if current_page == 'contact' %}
+                      <span class="home">Contact</span>
+                    {% else %}
+                      <a href="{% url 'contact' %}">contact</a>
+                    {% endif %}
+                    {% if current_page == 'faq' %}
+                      <span class="home">FAQ</span>
+                    {% else %}
+                      <a href="{% url 'faq' %}">FAQ</a>
+                    {% endif %}
         </div>
+      </div>
+      <div id="nav">
                 <div id="nav-left">
                   <a href="{% url 'home' %}">
                     <img src="{% static 'images/logo.png' %}" alt="">
                   </a>
+                </div>
+                <div id="menu-icon" onclick="toggleNav()">
+                  <i class="fa fa-bars"></i>
+                </div>
+                <div id="close-icon" style="display: none;" onclick="toggleNav()">
+                  <i class="fa fa-times"></i>
                 </div>
                 <div id="nav-middle">
                     {% if current_page == 'home' %}
@@ -238,9 +323,31 @@
             </script>
             <script>
               function toggleNav() {
-                  var navMiddle = document.getElementById("nav-middle");
-          
-                  navMiddle.style.display = (navMiddle.style.display === "none" || navMiddle.style.display === "") ? "flex" : "none";
+                var overlay = document.getElementById("nav-overlay");
+                var menuIcon = document.getElementById("menu-icon");
+                var closeIcon = document.getElementById("close-icon");
+
+                if (overlay.classList.contains("open")) {
+                    overlay.classList.remove("open");
+                    menuIcon.style.display = "block";
+                    closeIcon.style.display = "none";
+                } else {
+                    overlay.classList.add("open");
+                    menuIcon.style.display = "none";
+                    closeIcon.style.display = "block";
+                }
+
+                if (overlay.style.display === "flex") {
+                    // Hide the overlay
+                    overlay.style.display = "none";
+                    menuIcon.style.display = "block";
+                    closeIcon.style.display = "none";
+                } else {
+                    // Show the overlay
+                    overlay.style.display = "flex";
+                    menuIcon.style.display = "none";
+                    closeIcon.style.display = "block";
+                }
               }
             </script>
             </body>
