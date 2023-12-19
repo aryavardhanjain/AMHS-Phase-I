@@ -14,6 +14,13 @@ html,body{
     overflow-x: hidden;
 }
 
+#menu-icon {
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+}
+
+
 #nav{
     height: 8vh;
     width: 100%;
@@ -38,11 +45,12 @@ html,body{
       margin-bottom: 10px;
   }
   #nav-middle{
-      width: 1600%;
+      width: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
       gap: 5px;
+      flex-wrap: wrap;
       /* margin-right: 20%; */
   }
   #nav-middle a{
@@ -160,6 +168,42 @@ html,body{
 }
 
 
+@media screen and (max-width: 768px) {
+  #nav-right {
+    display: none;
+  }
+  
+  #nav-middle {
+    display: none;
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  #nav-middle a{
+    display: block;
+    padding: 15px;
+  }
+
+  #hamburger {
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+    margin-right: 10%;
+    flex-direction: column;
+    /* flex-direction: row; */
+  }
+
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 3px 0;
+    transition: 0.4s;
+  }
+}
+
+
 
 #page-1{
     width: 100vw;
@@ -242,6 +286,7 @@ a {
   }
 
   .shadow__btn-1{
+    width: 120%;
     margin: 20px 0px 20px 50px;
   }
 
@@ -261,16 +306,6 @@ a {
               0 0 100px #ffffff;
   }
 
-  @media screen and (max-width: 600px){
-    #nav-right {
-      margin-right: 0;
-    }
-
-    .shadow__btn-1{
-      margin: 10px 0;
-      font-size: 15px;
-    }
-  }
 
   .gallery {
 	padding: 1rem;
