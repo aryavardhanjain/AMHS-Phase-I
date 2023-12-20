@@ -201,6 +201,7 @@ html,body{
   color: #151566; /* Same color as main nav */
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
+  text-align: center;
   text-transform: capitalize;
   padding: 10px;
   margin: 5px 0;
