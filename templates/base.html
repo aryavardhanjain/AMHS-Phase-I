@@ -49,7 +49,7 @@
                       <a href="{% url 'home' %}">home</a>
                     {% endif %}
                     <div class="dropdown">
-                        <a class="dropbtn" href="#" style="margin-bottom: 10px;">about<i class="ri-arrow-down-s-line"></i></a>
+                        <a class="dropbtn" href="#" style="padding-left: 30px;">about<i class="ri-arrow-down-s-line"></i></a>
                         <div class="dropdown-content">
                           {% if current_page == 'founders' %}
                             <span class="home" style="color: #fb181b !important; background-image: none !important;">Our Founders</span>
@@ -64,7 +64,7 @@
                         </div>
                     </div>
                     <div class="dropdown">
-                        <a class="dropbtn" href="#">services<i class="ri-arrow-down-s-line"></i></a>
+                        <a class="dropbtn" href="#" style="padding-left: 40px; padding-top: 10px !important;">services<i class="ri-arrow-down-s-line"></i></a>
                         <div class="dropdown-content">
                           {% if current_page == 'children' %}
                             <span class="home">Children</span>
@@ -116,10 +116,10 @@
                     {% if current_page == 'contact' %}
                       <span class="home">Contact</span>
                     {% else %}
-                      <a href="{% url 'contact' %}">contact</a>
+                      <a href="{% url 'contact' %}" style="padding-left: 25px;">contact</a>
                     {% endif %}
                     {% if current_page == 'faq' %}
-                      <span class="home">FAQ</span>
+                      <span class="home" style="padding-left: 15px;">FAQ</span>
                     {% else %}
                       <a href="{% url 'faq' %}">FAQ</a>
                     {% endif %}
