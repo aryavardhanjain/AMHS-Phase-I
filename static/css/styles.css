@@ -172,7 +172,7 @@ html,body{
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent black */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -192,46 +192,27 @@ html,body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: white;
+    text-transform: capitalize;
+    font-family: 'Montserrat', sans-serif;
 }
 
-.overlay-content a, .overlay-content span {
-  font-size: 1.5rem; /* Larger text for links */
-  margin: 10px 0; /* Spacing between links */
+.overlay-content a {
   text-decoration: none;
-  color: white; /* Same as parent for simplicity */
+  color: #151566; /* Same color as main nav */
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  text-transform: capitalize;
+  padding: 10px;
+  margin: 5px 0;
+  width: 100%;
+  font-size: 4vw; /* Adjust as needed */
   transition: color 0.3s ease;
 }
 
-.overlay-content a:hover, .overlay-content span:hover {
-  color: #fb181b; /* Highlight color on hover */
+.overlay-content a:hover {
+  color: #fb181b; /* Same hover effect as main nav */
 }
 
-@media screen and (max-width: 768px) {
-  .overlay-content a, .overlay-content span {
-      font-size: 1.2rem; /* Slightly smaller font on small screens */
-  }
-}
-
-/* Style for the dropdowns within the overlay */
-.overlay-content .dropdown {
-  position: relative; /* Needed for absolute positioning of dropdown content */
-}
-
-.overlay-content .dropdown-content {
-  position: absolute;
-  background-color: #f9f9f9; /* Light background for dropdown */
-  min-width: 160px; /* Minimum width */
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.overlay-content .dropdown-content a {
-  color: #333; /* Dark text color for contrast */
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
 
 @media screen and (max-width: 768px) {
   #nav {
