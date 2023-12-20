@@ -42,6 +42,9 @@
     
     <div id="main">
       <div id="nav-overlay" style="display: none;">
+        <div id="close-icon" onclick="toggleNav()">
+          <i class="fa fa-times"></i>
+        </div>
         <div class="overlay-content">
           {% if current_page == 'home' %}
                       <span class="home">home</span>
@@ -133,9 +136,6 @@
                 </div>
                 <div id="menu-icon" onclick="toggleNav()">
                   <i class="fa fa-bars"></i>
-                </div>
-                <div id="close-icon" style="display: none; z-index: 10000;" onclick="toggleNav()">
-                  <i class="fa fa-times"></i>
                 </div>
                 <div id="nav-middle">
                     {% if current_page == 'home' %}
@@ -329,21 +329,11 @@
 
                 if (overlay.classList.contains("open")) {
                     overlay.classList.remove("open");
-                    menuIcon.style.display = "block";
-                    closeIcon.style.display = "none";
-                } else {
-                    overlay.classList.add("open");
-                    menuIcon.style.display = "none";
-                    closeIcon.style.display = "block";
-                }
-
-                if (overlay.style.display === "flex") {
-                    // Hide the overlay
                     overlay.style.display = "none";
                     menuIcon.style.display = "block";
                     closeIcon.style.display = "none";
                 } else {
-                    // Show the overlay
+                    overlay.classList.add("open");
                     overlay.style.display = "flex";
                     menuIcon.style.display = "none";
                     closeIcon.style.display = "block";
