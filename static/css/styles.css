@@ -132,6 +132,10 @@ html,body{
     width: 300px;
 }
 
+#menu-icon {
+  display: none;
+}
+
 .dropdown-content a{
     color: #333;
     padding: 10px;
@@ -226,6 +230,7 @@ html,body{
 
   #nav-left img {
     height: 10vw;
+    margin-top: 20px;
   }
 
   body, a, button, .home, .dropbtn {
@@ -1049,7 +1054,7 @@ transform: rotateY(180deg);
 }
 
 .faq-section {
-  max-width: 940px;
+  max-width: 94%;
   margin: 150px auto;
   background-color: #f9f9f9;
   padding: 20px;
@@ -1117,6 +1122,28 @@ transform: rotateY(180deg);
 .faq-answer p{
   font-size: 22px;
   line-height: 1.6;
+}
+
+@media screen and (max-width: 768px) {
+  .faq-section {
+    margin: 90px 30px;
+    padding: 10px;
+  }
+
+  .faq-container h2 {
+    font-size: 30px; /* Smaller font size */
+  }
+
+  .faq-question {
+    font-size: 18px; /* Smaller font size */
+    padding: 10px; /* Adjust padding */
+  }
+
+  .faq-answer p {
+    font-size: 18px; /* Smaller font size */
+  }
+
+  /* Adjust any other necessary styles for smaller screens */
 }
 
 .font-animation {
