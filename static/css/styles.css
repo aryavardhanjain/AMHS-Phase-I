@@ -1019,39 +1019,32 @@ transform: rotateY(180deg);
   background: #5029bc;
 }
 
-@media (max-width: 950px) {
-  .container-1{
+@media (max-width: 768px) {
+  .container-1 {
     width: 90%;
-    padding: 30px 40px 40px 35px ;
+    padding: 30px;
+    margin-left: 20px;
+    margin-top: 10px;
   }
-  .container-1 .content .right-side{
-   width: 75%;
-   margin-left: 55px;
-}
-}
-@media (max-width: 820px) {
-  .container-1{
-    margin: 40px 0;
-    height: 100%;
+  .container-1 .content {
+    flex-direction: column;
   }
-  .container-1 .content{
-    flex-direction: column-reverse;
+  .container-1 .content .left-side, .container-1 .content .right-side {
+    width: 100%;
+    margin-left: 0;
   }
- .container-1 .content .left-side{
-   width: 100%;
-   flex-direction: row;
-   margin-top: 40px;
-   justify-content: center;
-   flex-wrap: wrap;
- }
- .container-1 .content .left-side::before{
-   display: none;
- }
- .container-1 .content .right-side{
-   width: 100%;
-   margin-left: 0;
- }
+  .content .left-side .details {
+    margin: 10px 0; /* Adjust space between contact details */
+  }
+  .right-side .input-box, .right-side .message-box {
+    padding: 8px 0; /* Adjust form field spacing */
+  }
+
+  .left-side::before {
+    display: none;
+  }
 }
+
 
 .faq-section {
   max-width: 94%;
