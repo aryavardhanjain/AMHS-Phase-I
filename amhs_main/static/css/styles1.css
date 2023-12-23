@@ -400,8 +400,8 @@
   .rounded {
     position: relative;
     left: 0% !important;
-    width: 300px !important;
-    height: 400px !important;
+    width: 200px !important;
+    height: 300px !important;
   }
 
   .timeline > li.timeline-inverted > .timeline-panel {
