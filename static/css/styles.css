@@ -1175,7 +1175,8 @@ a {
 
 @media screen and (max-width: 768px) {
   .introduction-box {
-    margin-left: 60px;
+    width: 100%;
+    margin: 0 !important;
   }
 }
 
