@@ -1181,12 +1181,7 @@ a {
 
   .flip-card,
   .flip-card-1 {
-    float: none;
-  }
-
-  .flip-card-inner,
-  .flip-card-inner-1 {
-    transform: none;
+    shape-outside: none;
   }
 }
 
