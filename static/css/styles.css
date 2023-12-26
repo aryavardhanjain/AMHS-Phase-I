@@ -1177,6 +1177,10 @@ a {
   .introduction-box {
     width: 100%;
     margin: 0 !important;
+  }
+
+  .introduction-text,
+  .introduction-text-1 {
     float: none;
   }
 }
