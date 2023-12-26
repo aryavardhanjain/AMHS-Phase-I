@@ -663,13 +663,14 @@ a {
   .slide-content-2 {
     width: 40%;
     margin-right: 0;
-    text-align: center;
+    text-align: justify;
     font-size: 12px;
   }
 
   canvas {
     width: 100px !important;
     height: 150px !important;
+    margin-left: 20px;
   }
 
   .slider-controls {
