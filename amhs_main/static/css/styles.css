@@ -1179,9 +1179,14 @@ a {
     margin: 0 !important;
   }
 
-  .introduction-text,
-  .introduction-text-1 {
+  .flip-card,
+  .flip-card-1 {
     float: none;
+  }
+
+  .flip-card-inner,
+  .flip-card-inner-1 {
+    transform: none;
   }
 }
 
