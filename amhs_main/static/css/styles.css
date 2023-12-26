@@ -662,7 +662,8 @@ a {
   .slide-content-1,
   .slide-content-2 {
     width: 40%;
-    margin-right: 0;
+    margin-right: 40px;
+    margin-left: 10px;
     text-align: justify;
     font-size: 12px;
   }
@@ -670,7 +671,6 @@ a {
   canvas {
     width: 100px !important;
     height: 150px !important;
-    margin-left: 20px;
   }
 
   .slider-controls {
