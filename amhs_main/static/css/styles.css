@@ -1184,6 +1184,10 @@ a {
     shape-outside: none;
   }
 
+  .flip-card-1 {
+    float: none;
+  }
+
   .introduction-text,
   .introduction-text-1 {
     font-size: 16px;
