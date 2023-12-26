@@ -1183,6 +1183,11 @@ a {
   .flip-card-1 {
     shape-outside: none;
   }
+
+  .introduction-text,
+  .introduction-text-1 {
+    font-size: 16px;
+  }
 }
 
 .active {
