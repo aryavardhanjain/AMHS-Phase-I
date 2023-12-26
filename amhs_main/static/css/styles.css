@@ -1175,19 +1175,7 @@ a {
 
 @media screen and (max-width: 768px) {
   .introduction-box {
-    height: 80%;
-    width: 60%;
-    margin-left: 100px;
-  }
-
-  .introduction-text {
-    padding: 30px;
-  }
-
-  .introduction-text,
-  .introduction-text-1 {
-    font-size: 16px;
-    line-height: normal;
+    margin-left: 60px;
   }
 }
 
