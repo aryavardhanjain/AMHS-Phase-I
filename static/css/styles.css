@@ -645,6 +645,44 @@ a {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .slider,
+  .slider-1 {
+    width: 100%;
+    margin: 20px auto;
+  }
+
+  .slides,
+  .slide {
+    align-items: center;
+    padding: 15px;
+  }
+
+  .slide-content,
+  .slide-content-1,
+  .slide-content-2 {
+    width: 100%;
+    margin-right: 0;
+    text-align: center;
+    font-size: 16px;
+  }
+
+  canvas {
+    width: 100px !important;
+    height: 150px !important;
+  }
+
+  .slider-controls {
+    width: 100%;
+    bottom: 10px;
+  }
+
+  .slider-controls label {
+    height: 15px;
+    width: 15px;
+  }
+}
+
 .footer {
   margin-top: 70px;
   display: flex;
