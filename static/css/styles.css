@@ -702,7 +702,7 @@ a {
   }
 
   .phone-container {
-    position: relative;
+    position: fixed;
     top: 0%;
   }
 
