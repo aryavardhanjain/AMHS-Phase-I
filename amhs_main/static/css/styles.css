@@ -704,6 +704,7 @@ a {
   .phone-container {
     position: relative;
     top: 40%;
+    margin-top: 50%;
     margin-bottom: 60%;
   }
 
