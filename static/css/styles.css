@@ -705,6 +705,15 @@ a {
     position: relative;
     top: 0%;
   }
+
+  .image-container img {
+    height: 30%;
+    width: 100%;
+  }
+
+  .gallery {
+    height: 70vh;
+  }
 }
 
 .footer {
