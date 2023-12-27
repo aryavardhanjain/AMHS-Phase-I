@@ -714,6 +714,10 @@ a {
   .gallery {
     height: 70vh;
   }
+
+  .shadow__btn {
+    width: 60%;
+  }
 }
 
 .footer {
