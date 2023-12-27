@@ -692,6 +692,10 @@ a {
     width: 100%;
   }
 
+  .p1-left {
+    margin-left: 0;
+  }
+
   .p1-sections {
     display: flex;
     flex-direction: column-reverse;
