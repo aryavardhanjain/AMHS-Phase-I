@@ -411,13 +411,18 @@ a {
   border-radius: 20px;
 }
 
-.slideshow-text {
+.slideshow-text,
+.slideshow-text-1 {
   position: relative;
   margin-top: 80px;
   font-family: "Montserrat", sans-serif;
   font-size: 20px;
   font-weight: 200;
   /* animation: slideInLeft 1.5s ease-in-out; */
+}
+
+.slideshow-text-1 {
+  margin-top: 0 !important;
 }
 
 .slider,
