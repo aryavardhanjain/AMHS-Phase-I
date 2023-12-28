@@ -421,10 +421,6 @@ a {
   /* animation: slideInLeft 1.5s ease-in-out; */
 }
 
-.slideshow-text-1 {
-  margin-top: 0 !important;
-}
-
 .slider,
 .slider-1 {
   position: relative;
@@ -713,12 +709,12 @@ a {
   }
 
   .image-container img {
-    height: 55%;
+    height: 80%;
     width: 100%;
   }
 
   .image-container {
-    height: 70%;
+    height: 55%;
   }
 
   .gallery {
@@ -727,6 +723,10 @@ a {
 
   .shadow__btn {
     width: 60%;
+  }
+
+  .slideshow-text-1 {
+    margin-top: 0;
   }
 }
 
