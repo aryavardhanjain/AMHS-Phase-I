@@ -677,7 +677,7 @@ a {
 
   .slide-image {
     position: relative;
-    top: 10%;
+    bottom: 50%;
   }
 
   .slid .slide canvas {
