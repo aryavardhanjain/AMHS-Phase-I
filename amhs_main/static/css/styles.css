@@ -760,6 +760,15 @@ a {
   .slideshow-text-1 {
     font-size: 16px !important;
   }
+
+  .flex i {
+    display: block !important;
+    font-size: 22px;
+  }
+}
+
+.flex i {
+  display: none;
 }
 
 .footer {
