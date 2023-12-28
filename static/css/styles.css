@@ -700,6 +700,7 @@ a {
 
   .p1-left {
     margin-left: 0;
+    margin-bottom: 0px !important;
   }
 
   .p1-sections {
