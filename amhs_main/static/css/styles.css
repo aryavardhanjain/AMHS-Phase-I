@@ -731,7 +731,7 @@ a {
 
   .slideshow-text,
   .slideshow-text-1 {
-    font-size: 16px;
+    font-size: 16px !important;
   }
 }
 
