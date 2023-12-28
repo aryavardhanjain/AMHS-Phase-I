@@ -666,7 +666,16 @@ a {
     font-size: 12px;
   }
 
-  canvas {
+  .slide-content-1 p {
+    width: 100%;
+  }
+
+  .slide-image img {
+    width: 100px;
+    height: 120px;
+  }
+
+  .slide canvas {
     width: 120px !important;
     height: 130px !important;
   }
@@ -700,6 +709,19 @@ a {
 
   .p1-left {
     margin-left: 0;
+  }
+
+  .slide-title {
+    display: flex;
+    font-size: 22px;
+  }
+
+  .flex {
+    gap: 30px;
+  }
+
+  .slide-text {
+    width: 200%;
   }
 
   .p1-sections {
