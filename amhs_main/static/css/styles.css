@@ -666,21 +666,15 @@ a {
     font-size: 12px;
   }
 
-  .slide-content-1 p {
+  .slide-content p {
     width: 100%;
   }
 
   .slide-image img {
-    width: 100px;
-    height: 80px;
+    display: none;
   }
 
-  .slide-image {
-    position: relative;
-    bottom: 50%;
-  }
-
-  .slid .slide canvas {
+  .slide .slide canvas {
     width: 120px !important;
     height: 130px !important;
   }
@@ -726,7 +720,7 @@ a {
   }
 
   .slide-text {
-    width: 200%;
+    width: 200% !important;
   }
 
   .p1-sections {
