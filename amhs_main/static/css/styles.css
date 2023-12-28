@@ -307,10 +307,6 @@ body {
   text-align: center;
 }
 
-.p1-left h1 {
-  font-size: 60px;
-}
-
 .p1-left p {
   font-size: 25px;
   margin-bottom: 70px;
@@ -687,6 +683,14 @@ a {
 
   #page-1 {
     height: 190vh;
+  }
+
+  .Welcome {
+    font-size: 20px;
+  }
+
+  .p1-left p {
+    font-size: 15px;
   }
 
   .p1-left,
