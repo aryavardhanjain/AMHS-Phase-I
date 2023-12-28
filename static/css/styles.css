@@ -724,6 +724,10 @@ a {
   .shadow__btn {
     width: 60%;
   }
+
+  .slideshow-text-1 {
+    margin-top: -80px;
+  }
 }
 
 .footer {
