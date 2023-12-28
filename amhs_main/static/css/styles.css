@@ -672,10 +672,15 @@ a {
 
   .slide-image img {
     width: 100px;
-    height: 120px;
+    height: 80px;
   }
 
-  .slide canvas {
+  .slide-image {
+    position: relative;
+    top: 10%;
+  }
+
+  .slid .slide canvas {
     width: 120px !important;
     height: 130px !important;
   }
