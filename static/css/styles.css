@@ -257,21 +257,12 @@ body {
     padding: 8px 16px;
   }
 
-  /* Footer adjustments */
-  .footer__nav,
-  .footer__addr,
-  .legal {
-    flex-direction: column;
-    text-align: center;
-    padding: 10px;
-  }
-
-  .footer__nav > * {
-    flex-basis: 100%;
-  }
-
   #nav-right button {
     display: none;
+  }
+
+  .footer_logo {
+    height: 5vh !important;
   }
 }
 
@@ -795,13 +786,6 @@ a {
 .footer__addr {
   margin-right: 1.25em;
   margin-bottom: 2em;
-}
-
-.footer__logo {
-  font-family: "Pacifico", cursive;
-  font-weight: 400;
-  text-transform: lowercase;
-  font-size: 1.5rem;
 }
 
 .footer__addr h2 {
