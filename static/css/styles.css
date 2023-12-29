@@ -264,6 +264,10 @@ body {
   .footer_logo {
     height: 5vh !important;
   }
+
+  .footer__btn {
+    width: 37%;
+  }
 }
 
 #page-1 {
