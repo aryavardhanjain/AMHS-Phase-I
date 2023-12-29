@@ -303,7 +303,7 @@ body {
   }
 
   .footer__addr {
-    margin-bottom: 14em !important;
+    margin-bottom: 10em !important;
   }
 
   .nav__item,
@@ -1329,6 +1329,13 @@ a {
   .introduction-text,
   .introduction-text-1 {
     font-size: 16px;
+  }
+
+  #doughnutChart {
+    height: 250px !important;
+    width: 250px !important;
+    margin-left: 5% !important;
+    padding: 15% !important;
   }
 }
 
