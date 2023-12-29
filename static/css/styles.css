@@ -270,7 +270,7 @@ body {
   }
 
   .footer li {
-    line-height: 1em;
+    line-height: 1em !important;
   }
 
   .nav__ul a {
