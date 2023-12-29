@@ -1331,7 +1331,7 @@ a {
     font-size: 16px;
   }
 
-  #doughnutChart {
+  #doughnutChart, #doughnutChart1, #doughnutChart2, #doughnutChart3, #doughnutChart4{
     height: 250px !important;
     width: 250px !important;
     margin-left: 5% !important;
