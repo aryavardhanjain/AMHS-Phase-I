@@ -293,6 +293,23 @@ body {
     align-items: center !important;
     justify-content: center !important;
   }
+
+  .footer__nav {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin-left: -15% !important;
+  }
+
+  .footer__addr {
+    margin-bottom: 14em !important;
+  }
+
+  .nav__item,
+  .nav__item--extra {
+    margin-right: 0 !important;
+  }
 }
 
 #page-1 {
