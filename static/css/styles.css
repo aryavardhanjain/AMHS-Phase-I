@@ -268,6 +268,10 @@ body {
   .footer__btn {
     width: 50%;
   }
+
+  .nav__ul {
+    font-size: 14px;
+  }
 }
 
 #page-1 {
