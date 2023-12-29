@@ -33,5 +33,4 @@ urlpatterns = [
     path('services/family/', views.services_family, name='services_family'),
     path('services/couples/', views.services_couples, name='services_couples'),
     path('services/consultation/', views.services_psychiatric_consultation, name='services_psychiatric_consultation'),
-    path('services/schools/', views.services_schools, name='services_schools'),
 ]

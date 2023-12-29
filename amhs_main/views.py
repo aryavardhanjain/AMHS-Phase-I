@@ -99,10 +99,3 @@ def services_psychiatric_consultation(request):
         "current_page": "consultation",
     }
     return render(request, "consultation.html", context)
-
-
-def services_schools(request):
-    context = {
-        "current_page": "schools",
-    }
-    return render(request, "schools.html", context)
