@@ -269,8 +269,8 @@ body {
     width: 50%;
   }
 
-  .nav__ul {
-    font-size: 14px;
+  .nav__ul li {
+    font-size: 10px;
   }
 }
 
