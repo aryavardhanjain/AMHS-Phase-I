@@ -269,6 +269,10 @@ body {
     width: 50%;
   }
 
+  .footer li {
+    line-height: 1em;
+  }
+
   .nav__ul a {
     font-size: 10px;
   }
