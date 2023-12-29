@@ -269,7 +269,7 @@ body {
     width: 50%;
   }
 
-  .nav__ul li {
+  .nav__ul a {
     font-size: 10px;
   }
 }
